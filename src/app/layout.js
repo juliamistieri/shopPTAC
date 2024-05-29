@@ -1,4 +1,4 @@
-
+import Footer from "@/app/componentes/Footer";
 
 export const metadata = {
   title: "Meu Shop.com",
