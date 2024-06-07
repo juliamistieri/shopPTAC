@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ff0000;
+    border-bottom: 1px #000;
+  }
+  
+.addButton {
+    color: rgb(255, 0, 0);
+}
+
+  .logo {
+    width: 100px;
+  }
+  
+  .marketing {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  

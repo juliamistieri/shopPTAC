@@ -1,16 +1,17 @@
-.main{
+.body{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .card{
     display: flex;
     width: 400px;
-    height: 400px;
+    height: auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    border-radius: 10%;
 }
