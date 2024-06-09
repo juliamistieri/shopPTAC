@@ -9,17 +9,17 @@ const Header = () => {
         <Image
           width={100}
           height={100}
-          src={"https://30praum.com/cdn/shop/files/733374D3-FB56-4348-A1C2-50F54ABE951B_500x499.png"} 
+          src={"https://static.nike.com.br/v10-390-0/images/brands/logo.svg"} 
           alt="Logo da loja"
         />
       </div>
-      <p className={style.marketing}>VISTA O RITMO, SINTA A MÚSICA NO SEU ESTILO!</p>
+      <p className={style.marketing}>Transforme o casual em essencial: descubra nossa coleção que une conforto e estilo para o seu dia a dia</p>
       <button className={style.addButton}>Adicionar produto</button>
       <div className={style.cartIcon}>
         <Image
-          width={70}
-          height={48}
-          src={"https://static.vecteezy.com/system/resources/previews/011/234/647/non_2x/red-shopping-cart-free-vector.jpg"}
+          width={50}
+          height={50}
+          src={"https://cdn-icons-png.flaticon.com/512/6713/6713723.png"}
           alt="Ícone de Carrinho"
         />
       </div>

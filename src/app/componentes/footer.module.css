@@ -3,19 +3,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000000;
-    color: #fff;
+    background-color: #0d00ff7c;
+    color: #ffffff;
   }
   
   .social-list {
     list-style-type: none;
     padding: 0;
     display: flex;
-    text-decoration: none;
-    
+    text-decoration: none; 
   }
-  
-
   
   .social-list li {
     margin-right: 10px;
@@ -23,7 +20,7 @@
   
   .company-info {
     font-size: 0.8rem;
-    font-style: italic;
+    font-style: arial;
   }
   
   .logo {

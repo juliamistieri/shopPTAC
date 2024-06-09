@@ -6,17 +6,17 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <ul className={style.social}>
-        <li>Mail</li>
         <li>Instagram</li>
-        <li>WhatsApp</li>
         <li>Facebook</li>
+        <li>Twitter</li>
+        <li>YouTube</li>
       </ul>
-      <p>JULIA MISTIERI</p>
+      <p>Desde 30 de março de 2007</p>
       <div className={style.logo}>
         <Image
           width={100}
           height={100}
-          src={"https://30praum.com/cdn/shop/files/733374D3-FB56-4348-A1C2-50F54ABE951B_500x499.png"} 
+          src={"https://static.nike.com.br/v10-390-0/images/brands/logo.svg"} 
           alt="Logo da empresa"
         />
       </div>
