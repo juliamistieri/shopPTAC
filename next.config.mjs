@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default function nextConfig (){
     images:{
         domains:[
             "fakestoreapi.com",
@@ -8,5 +8,3 @@ const nextConfig = {
         ]
     }
 };
-
-export default nextConfig;

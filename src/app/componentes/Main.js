@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "../page.module.css";
 
-export default async function Principal() {
+export default async function Main() {
   const resposta = await fetch("https://fakestoreapi.com/products/");
   const dados = await resposta.json();
 
