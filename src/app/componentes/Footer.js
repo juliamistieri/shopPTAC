@@ -2,7 +2,7 @@ import React from "react";
 import style from "./footer.module.css";
 import Image from "next/image";
 
-const Footer = () => {
+export default function Footer (){
   return (
     <footer className={style.footer}>
       <ul className={style.social}>
@@ -16,12 +16,9 @@ const Footer = () => {
         <Image
           width={100}
           height={100}
-          src={"https://static.nike.com.br/v10-390-0/images/brands/logo.svg"} 
-          alt="Logo da empresa"
+          src={"https://static.nike.com.br/v10-390-0/images/brands/logo.svg"}
         />
       </div>
     </footer>
   );
 };
-
-export default Footer;
