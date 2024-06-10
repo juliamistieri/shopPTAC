@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
-export default function nextConfig (){
-    images:{
-        domains:[
-            "fakestoreapi.com",
-            "cdn-icons-png.flaticon.com", 
-            "nike.com"
-        ]
-    }
-};
+const nextConfig = {
+        images:{
+            domains:[
+                "fakestoreapi.com",
+                "cdn-icons-png.flaticon.com", 
+                "nike.com"
+            ]
+        }
+    };
+    
+    export default nextConfig;
