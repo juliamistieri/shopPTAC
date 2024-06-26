@@ -32,7 +32,7 @@ export default function Main() {
     setProduct(listaAux);
    }
 
-   const orderPrice = () => {
+   const orderPriceAz = () => {
     const listaAux = [...listProduct].sort((a,b) => //vai construir uma nova lista de forma ordenada (alfabético)
        (a.price - b.price) );
        
@@ -43,13 +43,24 @@ export default function Main() {
     return <Spinner/>
    }
 
+   
+   const orderPriceZa = () => {
+    let listaAux = [...listProduct].sort((a,b) => //vai construir uma nova lista de forma ordenada (alfabético)
+       (a.price - b.price) );
+       
+       listaAux = listaAux.reverse();
+       setProduct(listaAux);
+   }
+
+
   return (
     <> {/* frame agrupa os elementos, para não ter que utilizar um agrupamento de classes */}
     <div className={styles.filters}>
       <div>
         <button onClick={ orderAz }> Az</button>
         <button onClick={ orderZa }> Za</button>
-        <button onClick={ orderPrice }> Price</button>
+        <button onClick={ orderPriceAz }> PriceAz</button>
+        <button onClick={ orderPriceZa }> PriceZa</button>
       </div>
     </div>
     <main className={styles.body}>
