@@ -1,5 +1,8 @@
-export default function Product(){
-    return(
-        <p>id: {params.id}</p>
-    );
-}
+export default async function Product({params}) {
+
+    const response = await fetch("https://fakestoreapi.com/products/" + params.id);
+    const data = await response.json();
+      return(
+        <p>id: {data.title}</p>
+      );
+    }

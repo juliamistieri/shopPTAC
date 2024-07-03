@@ -4,6 +4,7 @@ import styles from "../page.module.css";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
 import ErrorFetch from "./ErrorFetch";
+import Link from "next/link";
 
 export default function Main() {
 
@@ -106,6 +107,9 @@ export default function Main() {
             <p className={styles.description}>{produto.description.slice}</p>
             <p className={styles.category}>{produto.category}</p>
             <p>Estoque:{produto.rating.count}</p>
+            <Link href={"/product/" + produto.id}>
+            <button>Ver mais</button>
+            </Link>
           </div>
         ))}
       </main>
