@@ -33,7 +33,7 @@ export default function Main() {
     const listaAux = [...listProduct].sort((a,b) => //vai construir uma nova lista de forma ordenada (alfabético)
        a.title.localeCompare(b.title) );
        
-       setProduct(listaAux);
+       setListProduct(listaAux);
    }
 
    const orderZa = () => {
@@ -41,14 +41,14 @@ export default function Main() {
       a.title.localeCompare(b.title) );
     
     listaAux = listaAux.reverse();
-    setProduct(listaAux);
+    setListProduct(listaAux);
    }
 
    const orderPriceAz = () => {
     const listaAux = [...listProduct].sort((a,b) => //vai construir uma nova lista de forma ordenada (alfabético)
        (a.price - b.price) );
        
-       setProduct(listaAux);
+       setListProduct(listaAux);
    }
 
    
@@ -57,7 +57,7 @@ export default function Main() {
        (a.price - b.price) );
        
        listaAux = listaAux.reverse();
-       setProduct(listaAux);
+       setListProduct(listaAux);
    }
 
    const search = (text) => {
@@ -97,17 +97,18 @@ export default function Main() {
       </div>
     </div>
     <main className={styles.body}>
-      {listProduct.map((produto) => (
-        <div className={styles.card} key={produto.id}>
-          <h1>{produto.title}</h1>
-          <Image width={300} height={300} src={produto.image} alt={produto.title} />
-          <h3 className={styles.preco}>R$: {produto.price}</h3>
-          <p>{produto.description}</p>
-          <p>{produto.category}</p>
-          <p>Quantidade de Avaliações: {produto.rating.count}</p>
-        </div>
-      ))}
-    </main>
+        {listProduct.map((produto) => (
+          <div className={styles.card} key={produto.id}>
+            <h1 className={styles.title}>{produto.title.slice}</h1>
+            <Image width={300} height={300} src={produto.image}
+              alt={produto.title} className={styles.image}/>
+            <h3 className={styles.price}>R$: {produto.price}</h3>
+            <p className={styles.description}>{produto.description.slice}</p>
+            <p className={styles.category}>{produto.category}</p>
+            <p>Estoque:{produto.rating.count}</p>
+          </div>
+        ))}
+      </main>
     </>
   );
 }
